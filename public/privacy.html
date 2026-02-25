@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad - Wallmapu</title>
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f0f7f3; color: #1B4D38; line-height: 1.7; }
+
+    .header {
+      background: linear-gradient(135deg, #1F6043 0%, #2D8659 50%, #3DB870 100%);
+      padding: 48px 20px 40px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.08) 0%, transparent 50%);
+    }
+    .header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .header h1 { font-size: 28px; font-weight: 700; position: relative; }
+    .header p { font-size: 14px; opacity: 0.85; margin-top: 6px; position: relative; font-weight: 400; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px 40px; }
+    .last-update { font-size: 13px; color: #6b8f7b; font-style: italic; margin-bottom: 24px; }
+
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 3px rgba(27,77,56,0.06);
+      border: 1px solid #dce9e2;
+    }
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1F6043;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section h2::before {
+      content: '';
+      width: 4px;
+      height: 20px;
+      background: #2D8659;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .section h3 { font-size: 15px; font-weight: 600; color: #2D8659; margin: 14px 0 8px; }
+    .section p { font-size: 14px; color: #4a6b5a; margin-bottom: 8px; }
+    .section ul { margin: 8px 0 8px 20px; }
+    .section ul li { font-size: 14px; color: #4a6b5a; line-height: 28px; }
+    .section ul li::marker { color: #2D8659; }
+
+    .contact-box {
+      background: #f0f7f3;
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 14px;
+      border: 1px solid #dce9e2;
+    }
+    .contact-box .label { font-size: 12px; color: #6b8f7b; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .contact-box .label:first-child { margin-top: 0; }
+    .contact-box .value { font-size: 14px; color: #1F6043; font-weight: 600; }
+
+    .info-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: linear-gradient(135deg, #e8f5e9, #f0f7f3);
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 24px;
+      border: 1px solid #c8e6c9;
+    }
+    .info-box .icon { font-size: 24px; flex-shrink: 0; }
+    .info-box span { font-size: 13px; color: #2D8659; line-height: 20px; font-weight: 500; }
+
+    .nav {
+      text-align: center;
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+    .nav a {
+      color: #fff;
+      background: #2D8659;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    .nav a:hover { background: #1F6043; }
+
+    .footer {
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 12px;
+      color: #6b8f7b;
+      border-top: 1px solid #dce9e2;
+      margin-top: 20px;
+    }
+    .footer img { width: 32px; height: 32px; border-radius: 8px; margin-bottom: 8px; opacity: 0.6; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="/logo.png" alt="Wallmapu">
+    <h1>Política de Privacidad</h1>
+    <p>Wallmapu - Marketplace de Mascotas</p>
+  </div>
+
+  <div class="container">
+    <p class="last-update">Última actualización: Febrero 2026</p>
+
+    <div class="section">
+      <h2>1. Introducción</h2>
+      <p>En Wallmapu nos comprometemos a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información personal cuando utiliza nuestra aplicación móvil.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Información que Recopilamos</h2>
+      <h3>2.1 Información proporcionada por el usuario</h3>
+      <ul>
+        <li>Nombre completo y datos de contacto</li>
+        <li>Correo electrónico y número de teléfono</li>
+        <li>Fecha de nacimiento y género (opcional)</li>
+        <li>Ubicación (ciudad, barrio)</li>
+        <li>Información sobre mascotas (tipo, raza, edad)</li>
+        <li>Para comercios: datos fiscales (CUIT, razón social, etc.)</li>
+      </ul>
+      <h3>2.2 Información recopilada automáticamente</h3>
+      <ul>
+        <li>Datos de ubicación (con su permiso)</li>
+        <li>Información del dispositivo</li>
+        <li>Datos de uso de la aplicación</li>
+        <li>Dirección IP</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Uso de la Información</h2>
+      <p>Utilizamos su información para:</p>
+      <ul>
+        <li>Proporcionar y mejorar nuestros servicios</li>
+        <li>Mostrar tiendas cercanas a su ubicación</li>
+        <li>Personalizar su experiencia en la aplicación</li>
+        <li>Enviar notificaciones relevantes (con su consentimiento)</li>
+        <li>Procesar pagos de suscripciones para comercios</li>
+        <li>Comunicarnos con usted sobre su cuenta</li>
+        <li>Cumplir con obligaciones legales</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Comunicaciones y Marketing</h2>
+      <p>Para usuarios registrados como comerciantes, el correo electrónico proporcionado será utilizado para enviar:</p>
+      <ul>
+        <li>Información sobre su suscripción</li>
+        <li>Novedades y actualizaciones de la plataforma</li>
+        <li>Promociones y ofertas especiales</li>
+        <li>Facturas y comprobantes de pago</li>
+      </ul>
+      <p>Puede optar por no recibir comunicaciones promocionales en cualquier momento desde la configuración de la aplicación.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Compartir Información</h2>
+      <p>No vendemos su información personal. Podemos compartir datos con:</p>
+      <ul>
+        <li>Proveedores de servicios (procesadores de pago, hosting)</li>
+        <li>Autoridades cuando sea requerido por ley</li>
+        <li>Otros usuarios (solo información pública de tiendas)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. Seguridad de Datos</h2>
+      <p>Implementamos medidas de seguridad técnicas y organizativas para proteger su información, incluyendo:</p>
+      <ul>
+        <li>Encriptación de datos en tránsito (SSL/TLS)</li>
+        <li>Almacenamiento seguro de contraseñas</li>
+        <li>Acceso restringido a datos personales</li>
+        <li>Monitoreo de actividades sospechosas</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>7. Retención de Datos</h2>
+      <p>Conservamos su información mientras mantenga una cuenta activa o según sea necesario para proporcionarle servicios. Los datos fiscales de comercios se conservan según los plazos legales aplicables.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Sus Derechos</h2>
+      <p>De acuerdo con la Ley 25.326 de Protección de Datos Personales de Argentina, usted tiene derecho a:</p>
+      <ul>
+        <li>Acceder a sus datos personales</li>
+        <li>Rectificar datos inexactos</li>
+        <li>Solicitar la eliminación de sus datos</li>
+        <li>Oponerse al procesamiento de sus datos</li>
+        <li>Solicitar la portabilidad de sus datos</li>
+      </ul>
+      <p>Para ejercer estos derechos, contáctenos a info@wallmapu.com.ar</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Datos de Menores</h2>
+      <p>Nuestra aplicación no está dirigida a menores de 13 años. No recopilamos intencionalmente información de niños. Si descubrimos que hemos recopilado datos de un menor sin consentimiento parental, eliminaremos dicha información.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Cookies y Tecnologías Similares</h2>
+      <p>Utilizamos tecnologías de seguimiento para mejorar su experiencia, incluyendo:</p>
+      <ul>
+        <li>Almacenamiento local para preferencias</li>
+        <li>Analytics para entender el uso de la app</li>
+        <li>Tokens de autenticación</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>11. Cambios a esta Política</h2>
+      <p>Podemos actualizar esta política periódicamente. Le notificaremos sobre cambios significativos a través de la aplicación o por correo electrónico. Le recomendamos revisar esta página regularmente.</p>
+    </div>
+
+    <div class="section">
+      <h2>12. Contacto</h2>
+      <p>Si tiene preguntas sobre esta Política de Privacidad, puede contactarnos a:</p>
+      <div class="contact-box">
+        <div class="label">Email</div>
+        <div class="value">info@wallmapu.com.ar</div>
+        <div class="label">Responsable de Datos</div>
+        <div class="value">WHAPY LLC</div>
+        <div class="label">Dirección</div>
+        <div class="value">Mangoré esq. Araucanos S/N, Bosque Peralta Ramos, Mar del Plata, Argentina</div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="icon">&#x1f6e1;</div>
+      <span>Sus datos están protegidos bajo la Ley 25.326 de Protección de Datos Personales de la República Argentina.</span>
+    </div>
+
+    <div class="nav">
+      <a href="/terms">Términos y Condiciones</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img src="/logo.png" alt="Wallmapu"><br>
+    &copy; 2026 Wallmapu. Todos los derechos reservados.
+  </div>
+</body>
+</html>

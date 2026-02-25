@@ -1,0 +1,11 @@
+{
+  "name": "legal-wallmapu",
+  "version": "1.0.0",
+  "description": "Páginas legales de Wallmapu (Privacy Policy, Terms)",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
