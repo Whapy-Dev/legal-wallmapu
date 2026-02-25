@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminar Cuenta - Wallmapu</title>
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f0f7f3; color: #1B4D38; line-height: 1.7; }
+
+    .header {
+      background: linear-gradient(135deg, #1F6043 0%, #2D8659 50%, #3DB870 100%);
+      padding: 48px 20px 40px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.08) 0%, transparent 50%);
+    }
+    .header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .header h1 { font-size: 28px; font-weight: 700; position: relative; }
+    .header p { font-size: 14px; opacity: 0.85; margin-top: 6px; position: relative; font-weight: 400; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px 40px; }
+
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 3px rgba(27,77,56,0.06);
+      border: 1px solid #dce9e2;
+    }
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1F6043;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section h2::before {
+      content: '';
+      width: 4px;
+      height: 20px;
+      background: #2D8659;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .section p { font-size: 14px; color: #4a6b5a; margin-bottom: 8px; }
+    .section ol { margin: 12px 0 12px 20px; }
+    .section ol li { font-size: 14px; color: #4a6b5a; line-height: 28px; margin-bottom: 4px; }
+    .section ul { margin: 8px 0 8px 20px; }
+    .section ul li { font-size: 14px; color: #4a6b5a; line-height: 28px; }
+    .section ul li::marker { color: #2D8659; }
+
+    .warning-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: #fff3e0;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 20px;
+      border: 1px solid #ffe0b2;
+    }
+    .warning-box .icon { font-size: 24px; flex-shrink: 0; }
+    .warning-box span { font-size: 13px; color: #e65100; line-height: 20px; font-weight: 500; }
+
+    .contact-box {
+      background: #f0f7f3;
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 14px;
+      border: 1px solid #dce9e2;
+      text-align: center;
+    }
+    .contact-box p { font-size: 14px; color: #4a6b5a; margin-bottom: 4px; }
+    .contact-box a {
+      color: #2D8659;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+
+    .nav {
+      text-align: center;
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+    .nav a {
+      color: #fff;
+      background: #2D8659;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    .nav a:hover { background: #1F6043; }
+
+    .footer {
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 12px;
+      color: #6b8f7b;
+      border-top: 1px solid #dce9e2;
+      margin-top: 20px;
+    }
+    .footer img { width: 32px; height: 32px; border-radius: 8px; margin-bottom: 8px; opacity: 0.6; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="/logo.png" alt="Wallmapu">
+    <h1>Eliminar Cuenta</h1>
+    <p>Wallmapu - Marketplace de Mascotas</p>
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Solicitar eliminación de cuenta</h2>
+      <p>Si desea eliminar su cuenta de Wallmapu y todos los datos asociados, puede hacerlo de las siguientes maneras:</p>
+    </div>
+
+    <div class="section">
+      <h2>Opción 1: Desde la aplicación</h2>
+      <ol>
+        <li>Abra la aplicación Wallmapu</li>
+        <li>Vaya a <strong>Perfil</strong> > <strong>Configuración</strong></li>
+        <li>Seleccione <strong>"Eliminar mi cuenta"</strong></li>
+        <li>Confirme la eliminación</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>Opción 2: Por correo electrónico</h2>
+      <p>Envíe un correo electrónico a la siguiente dirección solicitando la eliminación de su cuenta. Incluya el correo electrónico asociado a su cuenta de Wallmapu.</p>
+      <div class="contact-box">
+        <p>Enviar solicitud a:</p>
+        <a href="mailto:info@wallmapu.com.ar?subject=Solicitud%20de%20eliminación%20de%20cuenta">info@wallmapu.com.ar</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Datos que se eliminan</h2>
+      <p>Al eliminar su cuenta, se borrarán permanentemente:</p>
+      <ul>
+        <li>Su perfil y datos personales (nombre, email, teléfono)</li>
+        <li>Información de ubicación</li>
+        <li>Historial de pedidos</li>
+        <li>Reseñas publicadas</li>
+        <li>Información de mascotas</li>
+        <li>Para comercios: datos de la tienda, productos y suscripciones</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Plazo de eliminación</h2>
+      <p>Su solicitud será procesada en un plazo máximo de <strong>30 días hábiles</strong>. Recibirá una confirmación por correo electrónico una vez que sus datos hayan sido eliminados.</p>
+    </div>
+
+    <div class="warning-box">
+      <div class="icon">&#x26A0;</div>
+      <span>La eliminación de cuenta es permanente e irreversible. Una vez eliminada, no podrá recuperar su cuenta ni los datos asociados. Si tiene una suscripción activa, será cancelada sin reembolso.</span>
+    </div>
+
+    <div class="nav">
+      <a href="/privacy">Política de Privacidad</a>
+      <a href="/terms">Términos y Condiciones</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img src="/logo.png" alt="Wallmapu"><br>
+    &copy; 2026 Wallmapu. Todos los derechos reservados.
+  </div>
+</body>
+</html>
